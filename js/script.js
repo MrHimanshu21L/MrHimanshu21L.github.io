@@ -23,15 +23,33 @@ if (menuToggle && navbar) {
   });
 }
 
+// ===== THEME TOGGLE FIX =====
 if (themeToggle) {
   const icon = themeToggle.querySelector("i");
 
+  // ✅ Load saved theme on page load
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("theme-shift");
+    themeToggle.setAttribute("aria-pressed", "true");
+
+    if (icon) icon.className = "fa-solid fa-sun";
+  }
+
+  // ✅ Click toggle
   themeToggle.addEventListener("click", () => {
-    const isShifted = document.body.classList.toggle("theme-shift");
-    themeToggle.setAttribute("aria-pressed", String(isShifted));
+    const isDark = document.body.classList.toggle("theme-shift");
+
+    // Save state
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    themeToggle.setAttribute("aria-pressed", String(isDark));
 
     if (icon) {
-      icon.className = isShifted ? "fa-solid fa-sun" : "fa-solid fa-moon";
+      icon.className = isDark
+        ? "fa-solid fa-sun"
+        : "fa-solid fa-moon";
     }
   });
 }
