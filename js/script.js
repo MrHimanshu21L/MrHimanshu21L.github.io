@@ -37,6 +37,11 @@ if (themeToggle) {
 }
 
 if (timelineToggle && timelineCard) {
+
+  // ✅ FORCE INITIAL CLOSED STATE
+  timelineCard.classList.add("is-collapsed");
+  timelineToggle.setAttribute("aria-expanded", "false");
+
   timelineToggle.addEventListener("click", () => {
     const isCollapsed = timelineCard.classList.toggle("is-collapsed");
     timelineToggle.setAttribute("aria-expanded", String(!isCollapsed));
