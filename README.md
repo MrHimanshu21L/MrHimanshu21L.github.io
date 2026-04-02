@@ -48,7 +48,9 @@ I focus on:
 
 ## 🌐 Live Website
 
-👉 [Visit Portfolio]([https://MrHimanshu21L.com]
+<a href="https://mrhimanshu21l.github.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Visit-Portfolio-blue?style=for-the-badge">
+</a>
 
 ---
 
