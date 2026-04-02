@@ -54,11 +54,6 @@ I focus on:
 
 ---
 
-## 📸 Preview
-
-(Add a screenshot here after deployment)
-
----
 
 ## 📥 Installation & Usage
 
@@ -87,8 +82,8 @@ Open index.html in browser
 ## 🤝 Connect With Me
 
 * GitHub: https://github.com/MrHimanshu21L
-* LinkedIn: (Add your link)
-* Portfolio: https://MrHimanshu21L.com
+* LinkedIn: ([MrHimanshu](https://www.linkedin.com/in/mrhimanshu21l?utm_source=share_via&utm_content=profile&utm_medium=member_android))
+* Portfolio: [https://MrHimanshu21L.com](https://mrhimanshu21l.github.io/)
 
 ---
 
