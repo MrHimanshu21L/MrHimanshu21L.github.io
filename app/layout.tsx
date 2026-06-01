@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Sora, Manrope } from "next/font/google";
+import { SpaceBackground } from "@/components/ui/space-background";
 import "./globals.css";
 
 const sora = Sora({
@@ -49,7 +50,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sora.variable} ${manrope.variable} bg-background`}>
       <body className="font-sans antialiased">
-        {children}
+        <SpaceBackground />
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
