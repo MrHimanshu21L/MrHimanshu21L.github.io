@@ -1,12 +1,13 @@
-import { Github, Linkedin, Twitter, Instagram, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
+import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { personalInfo } from "@/data/portfolio";
 
 export function Footer() {
   const socialLinks = [
-    { icon: Github, href: `https://github.com/${personalInfo.github}`, label: "GitHub" },
-    { icon: Linkedin, href: `https://linkedin.com/in/${personalInfo.linkedin}`, label: "LinkedIn" },
-    { icon: Twitter, href: `https://x.com/${personalInfo.twitter}`, label: "Twitter" },
-    { icon: Instagram, href: `https://instagram.com/${personalInfo.instagram}`, label: "Instagram" },
+    { icon: FaGithub, href: `https://github.com/${personalInfo.github}`, label: "GitHub" },
+    { icon: FaLinkedin, href: `https://linkedin.com/in/${personalInfo.linkedin}`, label: "LinkedIn" },
+    { icon: FaXTwitter, href: `https://x.com/${personalInfo.twitter}`, label: "Twitter" },
+    { icon: FaInstagram, href: `https://instagram.com/${personalInfo.instagram}`, label: "Instagram" },
   ];
 
   return (

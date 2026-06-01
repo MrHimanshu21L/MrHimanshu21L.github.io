@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Star, GitFork, Code, ExternalLink, Users, BookOpen, Activity } from "lucide-react";
+import { Star, GitFork, Code, ExternalLink, Users, BookOpen, Activity } from "lucide-react";
+import { FaGithub } from "react-icons/fa6";
 import {
   GitHubUser,
   GitHubRepo,
@@ -155,7 +156,7 @@ export function GitHubStats({ user, repos }: GitHubStatsProps) {
           >
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-lg font-bold flex items-center gap-2 font-[family-name:var(--font-sora)]">
-                <Github className="w-5 h-5 text-primary" />
+                <FaGithub className="w-5 h-5 text-primary" />
                 Recent Repositories
               </h3>
               <a
@@ -226,7 +227,7 @@ export function GitHubStats({ user, repos }: GitHubStatsProps) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-surface hover:bg-surface-hover border border-border hover:border-primary rounded-lg font-medium transition-all hover:scale-105"
           >
-            <Github className="w-5 h-5" />
+            <FaGithub className="w-5 h-5" />
             View Full GitHub Profile
             <ExternalLink className="w-4 h-4" />
           </a>

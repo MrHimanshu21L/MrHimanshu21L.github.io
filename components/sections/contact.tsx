@@ -1,15 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Github, Linkedin, Twitter, Instagram, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
+import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { personalInfo } from "@/data/portfolio";
 
 export function ContactSection() {
   const socialLinks = [
-    { icon: Github, href: `https://github.com/${personalInfo.github}`, label: "GitHub" },
-    { icon: Linkedin, href: `https://linkedin.com/in/${personalInfo.linkedin}`, label: "LinkedIn" },
-    { icon: Twitter, href: `https://x.com/${personalInfo.twitter}`, label: "Twitter" },
-    { icon: Instagram, href: `https://instagram.com/${personalInfo.instagram}`, label: "Instagram" },
+    { icon: FaGithub, href: `https://github.com/${personalInfo.github}`, label: "GitHub" },
+    { icon: FaLinkedin, href: `https://linkedin.com/in/${personalInfo.linkedin}`, label: "LinkedIn" },
+    { icon: FaXTwitter, href: `https://x.com/${personalInfo.twitter}`, label: "Twitter" },
+    { icon: FaInstagram, href: `https://instagram.com/${personalInfo.instagram}`, label: "Instagram" },
   ];
 
   return (

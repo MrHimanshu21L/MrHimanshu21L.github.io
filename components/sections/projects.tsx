@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, ExternalLink, Github } from "lucide-react";
+import { Calendar, ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa6";
 import { projects } from "@/data/portfolio";
 
 export function ProjectsSection() {
@@ -83,7 +84,7 @@ export function ProjectsSection() {
                       className="p-2 rounded-lg border border-border hover:border-primary text-foreground-secondary hover:text-primary transition-all"
                       aria-label="View on GitHub"
                     >
-                      <Github className="w-4 h-4" />
+                      <FaGithub className="w-4 h-4" />
                     </a>
                   )}
                 </div>
